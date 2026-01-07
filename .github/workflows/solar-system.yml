@@ -46,7 +46,7 @@ jobs:
           uses: actions/checkout@v4
         
         - name: Setup NodeJS Version 18
-          uses: actions/setup-node
+          uses: actions/setup-node@v4
           with:
             node-version: 18
         
@@ -54,7 +54,7 @@ jobs:
           run: npm install
 
         - name: Run Code Coverage
-          run: npm run code-coverage
+          run: npm run coverage
           continue-on-error: true
         
         - name: Upload Code Coverage Results
